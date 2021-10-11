@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-grey: rgb(37, 37, 37);
+    --ivory: ivory;
+    --black: black;
+}
+
+
+/*navbar styling*/
+.nav-bar {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.name {
+    color: var(--ivory);
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10% ;
+    list-style: none;
+    height: 10vh;
+    background-color: var(--dark-grey);
+}
+
+li a {
+    display: block;
+    color: var(--ivory);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+ /*end of navbar*/
+
+ /*hero styling*/
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-container {
+    position: relative;
+    background-image: url(img/img1.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 50%;
+    width: 205vh;
+
+}
+
+.ali-pic {
+    position: absolute;
+    border-radius: 50%;
+    animation: scale 7s;
+    
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+/*end of hero styling*/
+
+
+/*about me styling*/
+.content1 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    bottom: 50vh;
+    right: 1vh;
+}
+
+.container1 {
+    width: 600px;
+    height: 300px;
+    border: 5px solid var(--black);
+
+}
+
+.intro {
+    text-transform: uppercase;
+    line-height: 200pt;
+    margin-bottom: 60vh;
+    font-size: 36px;
+    position: relative;
+    left: 25%;
+    
+}
+
+/*end of about me styling*/
+
+/*my projects styling*/
+.my-projects {
+
+    display: block;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: wrap ;
+    position: absolute;
+    left: 540px;
+    top: 115vh;
+}
+
+.intro2  {
+    text-transform: uppercase;
+    line-height: 200pt;
+    font-size: 36px;
+    text-align: center;
+    position: relative;
+    top: 60px;
+
+}
+
+.project-container {
+    width: 600px;
+    height: 300px;
+    border: 5px solid var(--black);  
+
+}
+/*end of projects styling*/
+
+/*footer*/
+.intro-3 {
+    text-transform: uppercase;
+    line-height: 200pt;
+    margin-bottom: 60vh;
+    font-size: 36px;
+    position: absolute;
+    left: 50%;
+    bottom: -600%;  
+}
+
+ul {
+    color: var(--ivory);
+}
+
+footer {
+    position: absolute;
+    top: 290vh;
+    width: 100%;
+
+}
+/*end of footer styling*/
+
+@media (min-width: 500px) {
+
+    display {
+        display: block;
+    }
+}
+
+
+
